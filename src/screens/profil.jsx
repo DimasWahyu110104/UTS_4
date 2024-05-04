@@ -1,10 +1,10 @@
 import {StyleSheet, View} from 'react-native';
 import React from 'react';
 
-const beranda = () => {
+const profil = () => {
   return <View></View>;
 };
 
-export default beranda;
+export default profil;
 
 const styles = StyleSheet.create({});
