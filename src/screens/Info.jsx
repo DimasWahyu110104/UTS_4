@@ -5,7 +5,7 @@ const Info = () => {
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.headerTitle}>Niat Wudhu</Text>
+        <Text style={styles.headerTitle}>Niat sholat</Text>
       </View>
       <View style={styles.mainContent}>
         <View style={styles.privacySection}>
@@ -34,7 +34,7 @@ const Info = () => {
       </View>
       <View style={styles.footer}>
         <Text style={styles.footerText}>
-          © 2024 Niat Wudhu. All rights reserved.
+          © 2024 Niat Sholat. All rights reserved.
         </Text>
       </View>
     </ScrollView>

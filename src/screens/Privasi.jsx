@@ -5,29 +5,29 @@ const Privasi = () => {
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.headerTitle}>Niat Wudhu</Text>
+        <Text style={styles.headerTitle}>Niat Sholat</Text>
       </View>
       <View style={styles.mainContent}>
         <View style={styles.infoSection}>
           <Text style={styles.sectionTitle}>Informasi Aplikasi</Text>
           <Text style={styles.sectionParagraph}>
-            Selamat datang di aplikasi Niat Wudhu! Aplikasi ini dirancang untuk
-            membantu umat Muslim mengingat dan melafalkan niat wudhu dengan
-            benar sebelum melaksanakan wudhu.
+            Selamat datang di aplikasi Niat Sholat! Aplikasi ini dirancang untuk
+            membantu umat Muslim mengingat dan melafalkan niat sholat dengan
+            benar sebelum melaksanakan sholat.
           </Text>
           <Text style={styles.sectionParagraph}>
             Fitur utama dari aplikasi ini meliputi:
           </Text>
           <View style={styles.featureList}>
-            <Text>- Mengingatkan niat wudhu</Text>
-            <Text>- Panduan langkah-langkah wudhu</Text>
-            <Text>- Tips dan trik untuk melaksanakan wudhu dengan benar</Text>
+            <Text>- Mengingatkan niat sholat</Text>
+            <Text>- Panduan langkah-langkah sholat</Text>
+            <Text>- Tips dan trik untuk melaksanakan sholat dengan benar</Text>
           </View>
         </View>
       </View>
       <View style={styles.footer}>
         <Text style={styles.footerText}>
-          © 2024 Niat Wudhu. All rights reserved.
+          © 2024 Niat Sholat. All rights reserved.
         </Text>
       </View>
     </ScrollView>
