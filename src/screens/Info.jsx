@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     padding: 20,
   },
   header: {
-    backgroundColor: '#007BFF',
+    backgroundColor: '#4682b4',
     padding: 20,
     alignItems: 'center',
     marginBottom: 20,
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
   },
   sectionTitle: {
     fontSize: 20,
-    color: '#007BFF',
+    color: '#4682b4',
     marginBottom: 10,
   },
   sectionParagraph: {
