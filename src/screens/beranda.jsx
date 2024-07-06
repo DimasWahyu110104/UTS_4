@@ -3,17 +3,17 @@ import React from 'react';
 import {StyleSheet, Text, View, FlatList, TouchableOpacity} from 'react-native';
 
 const prayerTimes = [
-  {id: '1', name: 'Subuh', time: '04:30'},
-  {id: '2', name: 'Dzuhur', time: '12:00'},
-  {id: '3', name: 'Ashar', time: '15:30'},
-  {id: '4', name: 'Maghrib', time: '18:00'},
-  {id: '5', name: 'Isya', time: '19:30'},
+  {id: '1', name: 'Subuh', time: '04:16'},
+  {id: '2', name: 'Dzuhur', time: '11:31'},
+  {id: '3', name: 'Ashar', time: '14:52'},
+  {id: '4', name: 'Maghrib', time: '17:23'},
+  {id: '5', name: 'Isya', time: '18:37'},
 ];
 
 function Beranda({navigation}) {
   return (
     <View style={styles.container}>
-      <Text style={styles.header}>Jadwal Sholat Lima Waktu</Text>
+      <Text style={styles.header}>Jadwal Dan Niat Sholat Lima Waktu</Text>
       <FlatList
         data={prayerTimes}
         renderItem={({item}) => (
