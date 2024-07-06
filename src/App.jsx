@@ -5,10 +5,14 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
-import beranda from './screens/beranda';
-import profil from './screens/profil';
-import pengaturan from './screens/pengaturan';
-
+import Beranda from './screens/Beranda';
+import Info from './screens/Info';
+import Maghrib from './router/Maghrib';
+import Isya from './router/Isya';
+import Dzuhur from './router/Dzuhur';
+import Ashar from './router/Ashar';
+import Subuh from './router/Subuh';
+import Privasi from './screens/Privasi';
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
@@ -17,7 +21,7 @@ function MyTabs() {
     <Tab.Navigator>
       <Tab.Screen
         name="Beranda"
-        component={beranda}
+        component={Beranda}
         options={{
           tabBarLabel: 'Beranda',
           tabBarIcon: ({color, size}) => (
@@ -26,22 +30,30 @@ function MyTabs() {
         }}
       />
       <Tab.Screen
-        name="Pengaturan"
-        component={pengaturan}
+        name="Privasi"
+        component={Privasi}
         options={{
-          tabBarLabel: 'Pengaturan',
+          tabBarLabel: 'Privasi Police',
           tabBarIcon: ({color, size}) => (
-            <MaterialCommunityIcons name="cog" color={color} size={size} />
+            <MaterialCommunityIcons
+              name="police-badge"
+              color={color}
+              size={size}
+            />
           ),
         }}
       />
       <Tab.Screen
-        name="Profil"
-        component={profil}
+        name="Info"
+        component={Info}
         options={{
-          tabBarLabel: 'profil',
+          tabBarLabel: 'Info',
           tabBarIcon: ({color, size}) => (
-            <MaterialCommunityIcons name="account" color={color} size={size} />
+            <MaterialCommunityIcons
+              name="information"
+              color={color}
+              size={size}
+            />
           ),
         }}
       />
@@ -58,6 +70,11 @@ function App() {
           component={MyTabs}
           options={{headerShown: false}}
         />
+        <Stack.Screen name="Maghrib" component={Maghrib} />
+        <Stack.Screen name="Isya" component={Isya} />
+        <Stack.Screen name="Dzuhur" component={Dzuhur} />
+        <Stack.Screen name="Ashar" component={Ashar} />
+        <Stack.Screen name="Subuh" component={Subuh} />
       </Stack.Navigator>
     </NavigationContainer>
   );
