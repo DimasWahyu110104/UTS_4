@@ -3,11 +3,11 @@ import React from 'react';
 import {StyleSheet, Text, View, FlatList, TouchableOpacity} from 'react-native';
 
 const prayerTimes = [
-  {id: '1', name: 'Subuh', time: '04:16'},
-  {id: '2', name: 'Dzuhur', time: '11:31'},
-  {id: '3', name: 'Ashar', time: '14:52'},
-  {id: '4', name: 'Maghrib', time: '17:23'},
-  {id: '5', name: 'Isya', time: '18:37'},
+  {id: '1', name: 'Subuh', time: '04:16 WIB'},
+  {id: '2', name: 'Dzuhur', time: '11:31 WIB'},
+  {id: '3', name: 'Ashar', time: '14:52 WIB'},
+  {id: '4', name: 'Maghrib', time: '17:23 WIB'},
+  {id: '5', name: 'Isya', time: '18:37 WIB'},
 ];
 
 function Beranda({navigation}) {
@@ -24,35 +24,35 @@ function Beranda({navigation}) {
               <TouchableOpacity
                 style={styles.button}
                 onPress={() => navigation.navigate('Subuh')}>
-                <Text style={styles.buttonText}>Niat Maghrib</Text>
+                <Text style={styles.buttonText}>Niat Sholat Subuh</Text>
               </TouchableOpacity>
             )}
             {item.name === 'Maghrib' && (
               <TouchableOpacity
                 style={styles.button}
                 onPress={() => navigation.navigate('Maghrib')}>
-                <Text style={styles.buttonText}>Niat Maghrib</Text>
+                <Text style={styles.buttonText}>Niat Sholat Maghrib</Text>
               </TouchableOpacity>
             )}
             {item.name === 'Isya' && (
               <TouchableOpacity
                 style={styles.button}
                 onPress={() => navigation.navigate('Isya')}>
-                <Text style={styles.buttonText}>Niat Isya</Text>
+                <Text style={styles.buttonText}>Niat Sholat Isya</Text>
               </TouchableOpacity>
             )}
             {item.name === 'Dzuhur' && (
               <TouchableOpacity
                 style={styles.button}
                 onPress={() => navigation.navigate('Dzuhur')}>
-                <Text style={styles.buttonText}>Niat Dzuhur</Text>
+                <Text style={styles.buttonText}>Niat Sholat Dzuhur</Text>
               </TouchableOpacity>
             )}
             {item.name === 'Ashar' && (
               <TouchableOpacity
                 style={styles.button}
                 onPress={() => navigation.navigate('Ashar')}>
-                <Text style={styles.buttonText}>Niat Ashar</Text>
+                <Text style={styles.buttonText}>Niat Sholat Ashar</Text>
               </TouchableOpacity>
             )}
           </View>
